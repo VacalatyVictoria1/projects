@@ -1,1 +1,5 @@
-alert("hi");
+// Sum Numbers
+function sum (numbers) {
+    
+    
+};
