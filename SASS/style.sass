@@ -45,15 +45,46 @@ body
         letter-spacing: 10px
         text-transform: uppercase
         margin-bottom: 10px
+        animation-name: leftToright
+        animation-duration: 1.7s
+        animation-delay: 1s
+        animation-timing-function: ease
     &__secondary
         display: block
         font-weight: 100
         font-size: 40px
         line-height: 48px
         letter-spacing: 5px
+        animation-name: rightToleft
+        animation-duration: 1.7s
+        animation-delay: 1s
+        animation-timing-function: ease
 
 
+@keyframes leftToright
+    0%
+        opacity: 0
+        transform: translateX(-100px)
 
+    80%
+        transform: translateX(10px)
+
+    100%
+        opacity: 1
+        transform: translateX(0px)
+
+
+@keyframes rightToleft
+    0%
+        opacity: 0
+        transform: translateX(100px)
+
+    80%
+        transform: translateX(-10px)
+
+    100%
+        opacity: 1
+        transform: translateX(0px)
 
 
 
